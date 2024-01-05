@@ -1,0 +1,29 @@
+@import '../../styles/variables.scss';
+
+.menu {
+    background-color: $green;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .links {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu .logo {
+    width: clamp(86px, 40.18608vw, 344px);
+    height: clamp(59.5px, 27.80316vw, 238px);
+    margin-bottom: clamp(7.5px, 3.5046vw, 30px);
+}
+
+.menu .item {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: clamp(12px, 5.60736vw, 48px);
+    color: $white;
+    text-align: center;
+    margin-top: clamp(10px, 4.6728vw, 40px);
+}
