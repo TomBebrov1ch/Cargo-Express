@@ -1,0 +1,35 @@
+@import "../../styles/variables.scss";
+
+.calc {
+  margin: auto;
+  width: 90%;
+  background-color: $green;
+  border-radius: 3px;
+  &__text {
+    color: $white;
+    margin-top: clamp(16px, 7.47648vw, 64px);
+  }
+  &__input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__loc {
+    width: clamp(12px, 5.60736vw, 48px);
+    height: clamp(12px, 5.60736vw, 48px);
+    position: relative;
+    top: clamp(18.5px, 8.64468vw, 74px);
+    right: clamp(55px, 25.7004vw, 220px);
+  }
+  &__item {
+    padding: clamp(10px, 4.6728vw, 40px);
+    padding-left: clamp(32.5px, 15.186599999999999vw, 130px);
+    padding-right: clamp(32.5px, 15.186599999999999vw, 130px);
+    border: none;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: clamp(8px, 3.73824vw, 32px);
+  }
+}
