@@ -2,12 +2,12 @@ import React from "react";
 import Train from "../../../assets/train_icon.svg";
 import "../ButtonOur/style.scss";
 
-const ButtonOur = () => {
+const ButtonOur = ({ text, showImage }) => {
   return (
     <div className="button">
       <button className="button__item">
-        <img src={Train} alt="train" className="button__img" />
-        <span className="button__text">Наши вагоны</span>
+        {showImage && <img src={Train} alt="train" className="button__img" />}
+        <span className="button__text">{text}</span>
       </button>
     </div>
   );

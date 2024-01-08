@@ -47,7 +47,7 @@ const MainScreen = () => {
             </p>
           </Fade>
           <Fade direction="right" delay={300} triggerOnce>
-            <ButtonOur />
+            <ButtonOur text={'Наши вагоны'} showImage={true} />
           </Fade>
           <Fade direction="left" delay={400} triggerOnce>
             <ButtonMore />

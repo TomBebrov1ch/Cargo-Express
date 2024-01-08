@@ -5,23 +5,34 @@
   width: 90%;
   background-color: $green;
   border-radius: 3px;
+  padding-bottom: clamp(20px, 9.3456vw, 80px);
+
   &__text {
     color: $white;
-    margin-top: clamp(16px, 7.47648vw, 64px);
+    margin-top: clamp(8px, 3.73824vw, 32px);
+    font-weight: 400;
+    font-size: clamp(8px, 3.73824vw, 32px);
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    top: clamp(8px, 3.73824vw, 32px);
+    right: clamp(37.5px, 17.523vw, 150px);
   }
+
   &__input {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+
   &__loc {
     width: clamp(12px, 5.60736vw, 48px);
     height: clamp(12px, 5.60736vw, 48px);
     position: relative;
-    top: clamp(18.5px, 8.64468vw, 74px);
-    right: clamp(55px, 25.7004vw, 220px);
+    top: clamp(21px, 9.81288vw, 84px);
+    right: clamp(67.5px, 31.5414vw, 270px);
   }
+
   &__item {
     padding: clamp(10px, 4.6728vw, 40px);
     padding-left: clamp(32.5px, 15.186599999999999vw, 130px);
@@ -31,5 +42,47 @@
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: clamp(8px, 3.73824vw, 32px);
+  }
+
+  &__sort {
+    position: relative;
+    bottom: clamp(21px, 9.81288vw, 84px);
+    left: clamp(65px, 30.373199999999997vw, 260px);
+    width: clamp(12px, 5.60736vw, 48px);
+    height: clamp(12px, 5.60736vw, 48px);
+    padding-bottom: 0;
+  }
+
+  &__text-ps {
+    color: $white;
+    margin-top: clamp(8px, 3.73824vw, 32px);
+    font-weight: 400;
+    font-size: clamp(8px, 3.73824vw, 32px);
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    top: clamp(8px, 3.73824vw, 32px);
+    right: clamp(65px, 30.373199999999997vw, 260px);
+  }
+
+  &__text-date {
+    color: $white;
+    margin-top: clamp(8px, 3.73824vw, 32px);
+    font-weight: 400;
+    font-size: clamp(8px, 3.73824vw, 32px);
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    top: clamp(8px, 3.73824vw, 32px);
+    right: clamp(51px, 23.83128vw, 204px);
+  }
+
+  &__text-code {
+    color: $white;
+    margin-top: clamp(8px, 3.73824vw, 32px);
+    font-weight: 400;
+    font-size: clamp(8px, 3.73824vw, 32px);
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    top: clamp(-7.5px, -3.5046vw, -30px);
+    right: clamp(10px, 4.6728vw, 40px);
   }
 }
