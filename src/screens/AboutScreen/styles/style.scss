@@ -1,0 +1,52 @@
+@import "../../../styles/variables.scss";
+
+.about {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: clamp(32px, 14.95296vw, 128px);
+  background-color: $green;
+  &__separatop {
+    border: 3px solid $gold;
+    width: clamp(75px, 35.046vw, 300px);
+    margin-top: clamp(8px, 3.73824vw, 32px);
+  }
+  &__vagon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: $white2;
+    margin-top: clamp(32px, 14.95296vw, 128px);
+  }
+  &__text-s {
+    color: $dark;
+    font-family: "Rubik", sans-serif;
+    margin-top: clamp(16px, 7.47648vw, 64px);
+    font-weight: 600;
+    font-size: clamp(21px, 9.81288vw, 84px);
+    line-height: clamp(25px, 11.681999999999999vw, 100px);
+    margin-top: clamp(32px, 14.95296vw, 128px);
+  }
+  &__par-s {
+    font-family: "Open Sans", sans-serif;
+    line-height: clamp(12.895px, 6.0255756vw, 51.58px);
+    color: $dark;
+    text-align: center;
+    width: 90%;
+    margin-top: clamp(8px, 3.73824vw, 32px);
+    font-size: clamp(8px, 3.73824vw, 32px);
+    margin-bottom: clamp(16px, 7.47648vw, 64px);
+  }
+  &__advant {
+    background-image: url("../../../assets/Group-43.webp");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}

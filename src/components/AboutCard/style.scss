@@ -1,0 +1,41 @@
+@import "../../styles/variables.scss";
+
+.card {
+  width: 90%;
+  margin: auto;
+  height: clamp(189px, 88.31591999999999vw, 756px);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: clamp(16px, 7.47648vw, 64px);
+
+  &__img {
+    margin-top: clamp(16px, 7.47648vw, 64px);
+    width: 90px;
+    height: 90px;
+  }
+
+  &__text {
+    margin-top: clamp(8px, 3.73824vw, 32px);
+    width: 70%;
+  }
+
+  &__main {
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-size: clamp(12px, 5.60736vw, 48px);
+    font-weight: 500;
+  }
+
+  &__par {
+    margin: auto;
+    font-size: clamp(8.5px, 3.9718799999999996vw, 34px);
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    margin-top: clamp(8px, 3.73824vw, 32px);
+    margin-bottom: clamp(16px, 7.47648vw, 64px);
+  }
+}

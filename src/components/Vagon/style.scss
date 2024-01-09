@@ -1,0 +1,20 @@
+@import "../../styles/variables.scss";
+
+.vagon {
+  position: relative;
+  margin-top: clamp(16px, 7.47648vw, 64px);
+  &__img {
+    width: clamp(193px, 90.18504vw, 772px);
+    height: clamp(193px, 90.18504vw, 772px);
+  }
+  &__text {
+    position: absolute;
+    left: clamp(15px, 7.0092vw, 60px);
+    bottom: clamp(15px, 7.0092vw, 60px);
+    font-weight: 600;
+    font-size: clamp(15px, 7.0092vw, 60px);
+    font-family: "Rubik", sans-serif;
+    color: $white2;
+    line-height: clamp(20.74px, 9.6913872vw, 82.96px);
+  }
+}

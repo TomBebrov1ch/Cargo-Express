@@ -1,14 +1,8 @@
 import React from "react";
 import "../ButtonMore/style.scss";
 
-const ButtonOur = () => {
-  return (
-    <div className="buttons">
-      <button className="buttons__item">
-        <span className="buttons__text">Подробнее</span>
-      </button>
-    </div>
-  );
+const ButtonOur = ({ className, text }) => {
+  return <button className={`${className}`}>{text}</button>;
 };
 
 export default ButtonOur;

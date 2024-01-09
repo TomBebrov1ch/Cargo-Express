@@ -1,32 +1,51 @@
 @import "../../../styles/variables.scss";
 
-.buttons {
+.simple {
+  margin: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
   margin-top: clamp(16px, 7.47648vw, 64px);
-  &__item {
-    background-color: $white2;
-    border: none;
-    border: 3px solid $green;
-    padding: clamp(7px, 3.2709599999999996vw, 28px);
-    padding-left: clamp(42.5px, 19.859399999999997vw, 170px);
-    padding-right: clamp(42.5px, 19.859399999999997vw, 170px);
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    font-size: clamp(10px, 4.6728vw, 40px);
-    text-align: center;
-    transition: 0.3s ease;
-  }
-  &__text {
-    color: $green;
-  }
+  background-color: $white2;
+  border: none;
+  border: 3px solid $green;
+  padding: clamp(7px, 3.2709599999999996vw, 28px);
+  padding-left: clamp(42.5px, 19.859399999999997vw, 170px);
+  padding-right: clamp(42.5px, 19.859399999999997vw, 170px);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: clamp(10px, 4.6728vw, 40px);
+  text-align: center;
+  transition: 0.3s ease;
+  color: $green;
 }
 
-.buttons__item:hover {
+.simple:hover {
   background-color: $green;
+  color: $white2;
 }
 
-.buttons__text:hover {
-  color: $white2;
+.outline {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: clamp(32px, 14.95296vw, 128px);
+  background-color: $green;
+  border: none;
+  border: 3px solid $white;
+  padding: clamp(7px, 3.2709599999999996vw, 28px);
+  padding-left: clamp(42.5px, 19.859399999999997vw, 170px);
+  padding-right: clamp(42.5px, 19.859399999999997vw, 170px);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: clamp(10px, 4.6728vw, 40px);
+  text-align: center;
+  transition: 0.3s ease;
+  color: $white;
+}
+
+.outline:hover {
+  background-color: $white;
+  color: $green;
 }
