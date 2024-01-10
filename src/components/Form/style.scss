@@ -1,44 +1,48 @@
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 
 .form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: clamp(32px, 14.95296vw, 128px);
+  &__text {
+    font-family: "Open Sans", sans-serif;
+    line-height: clamp(12.895px, 6.0255756vw, 51.58px);
+    color: $dark;
+    text-align: center;
+    font-size: clamp(8px, 3.73824vw, 32px);
+    margin-bottom: clamp(5px, 2.3364vw, 20px);
+  }
 
-    &__text {
-        font-family: "Open Sans", sans-serif;
-        line-height: clamp(12.895px, 6.0255756vw, 51.58px);
-        color: $dark;
-        text-align: center;
-        font-size: clamp(8px, 3.73824vw, 32px);
-        margin-bottom: clamp(8px, 3.73824vw, 32px);
-    }
+  &__input {
+    text-align: center;
+    padding: clamp(10px, 4.6728vw, 40px);
+    width: clamp(150px, 70.092vw, 600px);
+    border: 1px solid $white;
+    margin-bottom: clamp(16px, 7.47648vw, 64px);
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(8px, 3.73824vw, 32px);
+    line-height: clamp(12.895px, 6.0255756vw, 51.58px);
+  }
 
-    &__input {
-        text-align: center;
-        padding: clamp(10px, 4.6728vw, 40px);
-        width: clamp(150px, 70.092vw, 600px);
-        border: 1px solid $white;
-    }
+  &__error {
+    color: red;
+    font-family: "Open Sans", sans-serif;
+    line-height: clamp(12.895px, 6.0255756vw, 51.58px);
+    text-align: center;
+    font-size: clamp(8px, 3.73824vw, 32px);
+    margin-bottom: clamp(8px, 3.73824vw, 32px);
+  }
 
-    &__error {
-        color: red;
-        font-family: "Open Sans", sans-serif;
-        line-height: clamp(12.895px, 6.0255756vw, 51.58px);
-        text-align: center;
-        font-size: clamp(8px, 3.73824vw, 32px);
-        margin-bottom: clamp(8px, 3.73824vw, 32px);
-    }
-
-    &__button {
-        padding: clamp(7.5px, 3.5046vw, 30px);
-        width: clamp(125px, 58.41vw, 500px);
-        border: none;
-        background-color: $green;
-        color: $white;
-        font-family: "Open Sans", sans-serif;
-        font-size: clamp(9px, 4.20552vw, 36px);
-        font-weight: 500;
-    }
+  &__button {
+    padding: clamp(7.5px, 3.5046vw, 30px);
+    width: clamp(125px, 58.41vw, 500px);
+    border: none;
+    background-color: $green;
+    color: $white;
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(9px, 4.20552vw, 36px);
+    font-weight: 500;
+  }
 }

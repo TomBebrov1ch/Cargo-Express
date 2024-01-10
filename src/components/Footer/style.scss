@@ -1,0 +1,50 @@
+@import "../../styles/variables.scss";
+
+footer {
+  width: 100%;
+}
+
+.footer {
+  padding-top: clamp(32px, 14.95296vw, 128px);
+  padding-bottom: clamp(16px, 7.47648vw, 64px);
+  background-color: $green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__text {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    line-height: clamp(14.22px, 6.6447216vw, 56.88px);
+    color: $white;
+    text-align: center;
+    font-size: clamp(12px, 5.60736vw, 48px);
+    margin-top: clamp(8px, 3.73824vw, 32px);
+  }
+  &__btn {
+    padding: clamp(7.5px, 3.5046vw, 30px);
+    width: clamp(125px, 58.41vw, 500px);
+    border: none;
+    border-radius: 30px;
+    background-color: $white;
+    color: $green;
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(9px, 4.20552vw, 36px);
+    font-weight: 500;
+    margin-top: clamp(16px, 7.47648vw, 64px);
+  }
+  &__separator {
+    margin-top: clamp(32px, 14.95296vw, 128px);
+    border: 1px solid $white;
+    width: clamp(190px, 88.7832vw, 760px);
+  }
+  &__com {
+    font-family: "Rubik", sans-serif;
+    font-size: clamp(9px, 4.20552vw, 36px);
+    color: $white;
+    opacity: 0.5;
+    line-height: clamp(10.665px, 4.9835411999999994vw, 42.66px);
+    font-weight: 400;
+    margin-top: clamp(8px, 3.73824vw, 32px);
+  }
+}
