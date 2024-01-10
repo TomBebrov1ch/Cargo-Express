@@ -71,9 +71,8 @@
   &__button {
     background-color: $gold;
     border: none;
-    padding: clamp(8px, 3.73824vw, 32px);
-    padding-left: clamp(46px, 21.49488vw, 184px);
-    padding-right: clamp(46px, 21.49488vw, 184px);
+    padding: clamp(7.5px, 3.5046vw, 30px);
+    width: clamp(125px, 58.41vw, 500px);
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size: clamp(10px, 4.6728vw, 40px);

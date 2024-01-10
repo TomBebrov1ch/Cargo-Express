@@ -9,9 +9,8 @@
   background-color: $white2;
   border: none;
   border: 3px solid $green;
-  padding: clamp(7px, 3.2709599999999996vw, 28px);
-  padding-left: clamp(42.5px, 19.859399999999997vw, 170px);
-  padding-right: clamp(42.5px, 19.859399999999997vw, 170px);
+  padding: clamp(7.5px, 3.5046vw, 30px);
+  width: clamp(125px, 58.41vw, 500px);
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: clamp(10px, 4.6728vw, 40px);
@@ -34,7 +33,8 @@
   background-color: $green;
   border: none;
   border: 3px solid $white;
-  padding: clamp(7px, 3.2709599999999996vw, 28px);
+  padding: clamp(7.5px, 3.5046vw, 30px);
+  width: clamp(125px, 58.41vw, 500px);
   padding-left: clamp(42.5px, 19.859399999999997vw, 170px);
   padding-right: clamp(42.5px, 19.859399999999997vw, 170px);
   font-family: "Open Sans", sans-serif;

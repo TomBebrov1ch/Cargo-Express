@@ -5,22 +5,24 @@
   align-items: center;
   flex-direction: column;
   margin-top: clamp(16px, 7.47648vw, 64px);
+
   &__item {
     background-color: $gold;
     border: none;
-    padding: clamp(8px, 3.73824vw, 32px);
-    padding-left: clamp(30px, 14.0184vw, 120px);
-    padding-right: clamp(30px, 14.0184vw, 120px);
+    padding: clamp(7.5px, 3.5046vw, 30px);
+    width: clamp(125px, 58.41vw, 500px);
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size: clamp(10px, 4.6728vw, 40px);
     text-align: center;
     transition: 0.3s ease;
   }
+
   &__img {
     position: relative;
     top: clamp(1.5px, 0.70092vw, 6px);
   }
+
   &__text {
     position: relative;
     left: clamp(3px, 1.40184vw, 12px);

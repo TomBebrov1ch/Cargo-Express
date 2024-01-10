@@ -1,0 +1,44 @@
+@import '../../styles/variables.scss';
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__text {
+        font-family: "Open Sans", sans-serif;
+        line-height: clamp(12.895px, 6.0255756vw, 51.58px);
+        color: $dark;
+        text-align: center;
+        font-size: clamp(8px, 3.73824vw, 32px);
+        margin-bottom: clamp(8px, 3.73824vw, 32px);
+    }
+
+    &__input {
+        text-align: center;
+        padding: clamp(10px, 4.6728vw, 40px);
+        width: clamp(150px, 70.092vw, 600px);
+        border: 1px solid $white;
+    }
+
+    &__error {
+        color: red;
+        font-family: "Open Sans", sans-serif;
+        line-height: clamp(12.895px, 6.0255756vw, 51.58px);
+        text-align: center;
+        font-size: clamp(8px, 3.73824vw, 32px);
+        margin-bottom: clamp(8px, 3.73824vw, 32px);
+    }
+
+    &__button {
+        padding: clamp(7.5px, 3.5046vw, 30px);
+        width: clamp(125px, 58.41vw, 500px);
+        border: none;
+        background-color: $green;
+        color: $white;
+        font-family: "Open Sans", sans-serif;
+        font-size: clamp(9px, 4.20552vw, 36px);
+        font-weight: 500;
+    }
+}

@@ -8,11 +8,13 @@
   flex-direction: column;
   margin-top: clamp(32px, 14.95296vw, 128px);
   background-color: $green;
+
   &__separatop {
     border: 3px solid $gold;
     width: clamp(75px, 35.046vw, 300px);
     margin-top: clamp(8px, 3.73824vw, 32px);
   }
+
   &__vagon {
     display: flex;
     justify-content: center;
@@ -21,7 +23,9 @@
     text-align: center;
     background-color: $white2;
     margin-top: clamp(32px, 14.95296vw, 128px);
+    padding-bottom: clamp(16px, 7.47648vw, 64px);
   }
+
   &__text-s {
     color: $dark;
     font-family: "Rubik", sans-serif;
@@ -31,6 +35,7 @@
     line-height: clamp(25px, 11.681999999999999vw, 100px);
     margin-top: clamp(32px, 14.95296vw, 128px);
   }
+
   &__par-s {
     font-family: "Open Sans", sans-serif;
     line-height: clamp(12.895px, 6.0255756vw, 51.58px);
@@ -41,6 +46,7 @@
     font-size: clamp(8px, 3.73824vw, 32px);
     margin-bottom: clamp(16px, 7.47648vw, 64px);
   }
+
   &__advant {
     background-image: url("../../../assets/Group-43.webp");
     display: flex;
@@ -48,5 +54,21 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    padding: clamp(32px, 14.95296vw, 128px);
+
+    &__btn {
+      background-color: $gold;
+      border: none;
+      padding: clamp(7.5px, 3.5046vw, 30px);
+      width: clamp(140px, 65.41919999999999vw, 560px);
+      padding-left: clamp(30px, 14.0184vw, 120px);
+      padding-right: clamp(30px, 14.0184vw, 120px);
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: clamp(9px, 4.20552vw, 36px);
+      text-align: center;
+      transition: 0.3s ease;
+      margin-top: clamp(16px, 7.47648vw, 64px);
+    }
   }
 }
