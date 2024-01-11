@@ -80,3 +80,29 @@
     margin-top: clamp(16px, 7.47648vw, 64px);
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .calc {
+
+
+
+    &__inputs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-direction: row;
+
+    }
+
+    &__text {
+      font-size: clamp(8px, 0.83328vw, 32px);
+      font-weight: 400;
+    }
+
+    &__item {
+      padding: clamp(7.5px, 3.5046vw, 30px);
+      width: clamp(125px, 58.41vw, 500px);
+      text-align: center;
+    }
+  }
+}
