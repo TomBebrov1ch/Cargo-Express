@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 import "../Footer/style.scss";
 
@@ -13,7 +14,9 @@ const Footer = () => {
         <h1 className="footer__text">О нас</h1>
         <h1 className="footer__text">Наши вагоны</h1>
         <h1 className="footer__text">Контакты</h1>
-        <button className="footer__btn">Вверх</button>
+        <Link smooth to="main">
+          <button className="footer__btn">Вверх</button>
+        </Link>
         <hr className="footer__separator" />
         <p className="footer__com">©Cargo Express PV 2024</p>
       </div>

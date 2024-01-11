@@ -50,8 +50,6 @@
   color: $green;
 }
 
-
-
 @media screen and (min-width: 1024px) {
   .simple {
     width: clamp(130px, 13.5408vw, 520px);
@@ -66,5 +64,12 @@
   .simple:hover {
     background-color: $green;
     color: $white;
+  }
+
+  .outline {
+    width: clamp(130px, 13.5408vw, 520px);
+    padding: clamp(7.5px, 0.7812vw, 30px);
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(10px, 1.0416vw, 40px);
   }
 }

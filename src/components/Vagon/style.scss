@@ -20,3 +20,16 @@
     line-height: clamp(20.74px, 9.6913872vw, 82.96px);
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .vagon {
+    &__text {
+      font-size: clamp(17.5px, 1.8228vw, 70px);
+      font-weight: 500;
+    }
+    &__img {
+      width: clamp(194px, 20.20704vw, 776px);
+      height: clamp(194px, 20.20704vw, 776px);
+    }
+  }
+}

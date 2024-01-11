@@ -19,7 +19,7 @@ const Calculator = () => {
               placeholder="Станция отправления"
               className="calc__item"
             />
-            <TbArrowsUpDown className="calc__sort" />
+            <TbArrowsUpDown color="gray" className="calc__sort" />
           </div>
           <div className="calc__input">
             <p className="calc__text">Станция назначения</p>
@@ -29,7 +29,7 @@ const Calculator = () => {
               placeholder="Станция назначения"
               className="calc__item"
             />
-            <TbArrowsUpDown className="calc__sort" />
+            <TbArrowsUpDown color="gray" className="calc__sort" />
           </div>
           <div className="calc__input">
             <p className="calc__text">Тип п/с</p>
@@ -53,8 +53,8 @@ const Calculator = () => {
               className="calc__item-s"
             />
           </div>
-          <button className="calc__button">Расчитать</button>
         </div>
+        <button className="calc__button">Расчитать</button>
       </div>
     </>
   );

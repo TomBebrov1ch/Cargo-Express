@@ -74,3 +74,37 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .about {
+    background-image: url(../../../assets/about_bg.webp);
+
+    .about__card-pc {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-direction: row;
+      gap: clamp(16px, 1.66656vw, 64px);
+    }
+    &__vagon {
+      &__content {
+        width: 86.6%;
+      }
+      &__card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+        gap: clamp(16px, 1.66656vw, 64px);
+      }
+    }
+    &__text-s {
+      text-align: left;
+      font-size: clamp(24px, 2.49984vw, 96px);
+    }
+    &__par-s {
+      text-align: left;
+      width: 42%;
+    }
+  }
+}

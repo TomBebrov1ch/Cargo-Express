@@ -8,7 +8,7 @@ import Footer from "../../components/Footer/Footer";
 
 const Quest = () => {
   return (
-    <div className="quest">
+    <div className="quest" id="quest">
       <h1 className="quest__text">Остались вопросы?</h1>
       <hr className="about__separatop" />
       <p className="quest__par">

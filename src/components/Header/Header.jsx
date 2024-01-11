@@ -1,6 +1,8 @@
-import { useState } from "react";
+import React from "react";
 import logo from "../../assets/CARGO_LOGO 4.svg";
 import Hamburger from "hamburger-react";
+
+import { Link } from "react-scroll";
 
 import "../Header/header.scss";
 
@@ -25,13 +27,25 @@ const Header = (props) => {
           <nav className="header-pc__content">
             <img src={logo} alt="logo" className="header-pc__logo" />
             <div className="header-pc__content__text-s">
-              <p className="header-pc__content__text">Главная</p>
-              <p className="header-pc__content__text">О нас</p>
-              <p className="header-pc__content__text">Наши вагоны</p>
-              <p className="header-pc__content__text">Контакты</p>
+              <Link smooth to="mob-main">
+                <p className="header-pc__content__text">Главная</p>
+              </Link>
+              <Link smooth to="about">
+                <p className="header-pc__content__text">О нас</p>
+              </Link>
+              <Link smooth to="vagon">
+                <p className="header-pc__content__text">Наши вагоны</p>
+              </Link>
+              <Link smooth to="quest">
+                <p className="header-pc__content__text">Контакты</p>
+              </Link>
             </div>
             <div className="header-pc__content__bnt">
-              <button className="header-pc__content__button">Связаться с нами</button>
+              <Link smooth to="quest">
+                <button className="header-pc__content__button">
+                  Связаться с нами
+                </button>
+              </Link>
             </div>
           </nav>
         </header>

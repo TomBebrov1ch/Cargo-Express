@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Fade } from "react-awesome-reveal";
 import "./styles/mainscreen.scss";
 import MainTrain from "../../assets/main_train.webp";
-import TrainPc from '../../assets/main_train-pc.webp'
+import TrainPc from "../../assets/main_train-pc.webp";
 
 import Header from "../../components/Header/Header.jsx";
 import Menu from "../../components/Menu/Menu.jsx";
@@ -28,15 +28,15 @@ const MainScreen = () => {
   }, [isOpen]);
   return (
     <>
-      <section className="mob-screen-main">
+      <section className="mob-screen-main" id="mob-main">
         <main className="main">
           <Header isOpen={isOpen} toggleMenu={toggleMenu} />
           {isOpen && <Menu isOpen={isOpen} toggleMenu={toggleMenu} />}
           <div className="main__content">
             <Fade direction="up" triggerOnce>
               <h1 className="main__first">
-                <span className="main__span">Cargo Express PV – </span>Эффективная
-                и надёжная доставка грузов
+                <span className="main__span">Cargo Express PV – </span>
+                Эффективная и надёжная доставка грузов
               </h1>
             </Fade>
             <Fade direction="up" delay={200} triggerOnce>

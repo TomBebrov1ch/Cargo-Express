@@ -36,3 +36,15 @@
     font-size: clamp(8px, 3.73824vw, 32px);
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .ab__text {
+    font-size: clamp(24px, 2.49984vw, 96px);
+    line-height: clamp(28.44px, 2.9623104000000002vw, 113.76px);
+  }
+  .ab__par {
+    font-size: clamp(10px, 1.0416vw, 40px);
+    width: 30%;
+    font-weight: 400;
+  }
+}

@@ -39,3 +39,27 @@
     margin-bottom: clamp(16px, 7.47648vw, 64px);
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: clamp(200px, 20.832vw, 800px);
+    height: clamp(189px, 19.68624vw, 756px);
+
+    &__img {
+      width: clamp(46.5px, 4.84344vw, 186px);
+      height: clamp(46.5px, 4.84344vw, 186px);
+      margin-right: clamp(92.5px, 9.6348vw, 370px);
+    }
+    &__text {
+    }
+    &__main {
+      font-size: clamp(12px, 1.24992vw, 48px);
+      text-align: left;
+      width: 80%;
+    }
+    &__par {
+      font-size: clamp(8.5px, 0.88536vw, 34px);
+      text-align: left;
+    }
+  }
+}
