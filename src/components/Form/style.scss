@@ -6,6 +6,7 @@
   align-items: center;
   flex-direction: column;
   margin-bottom: clamp(32px, 14.95296vw, 128px);
+
   &__text {
     font-family: "Open Sans", sans-serif;
     line-height: clamp(12.895px, 6.0255756vw, 51.58px);
@@ -16,6 +17,17 @@
   }
 
   &__input {
+    text-align: center;
+    padding: clamp(10px, 4.6728vw, 40px);
+    width: clamp(150px, 70.092vw, 600px);
+    border: 1px solid $white;
+    margin-bottom: clamp(16px, 7.47648vw, 64px);
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(8px, 3.73824vw, 32px);
+    line-height: clamp(12.895px, 6.0255756vw, 51.58px);
+  }
+
+  &__input-s {
     text-align: center;
     padding: clamp(10px, 4.6728vw, 40px);
     width: clamp(150px, 70.092vw, 600px);
@@ -44,5 +56,65 @@
     font-family: "Open Sans", sans-serif;
     font-size: clamp(9px, 4.20552vw, 36px);
     font-weight: 500;
+    margin-top: clamp(8px, 3.73824vw, 32px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    position: relative;
+  }
+
+  .form {
+    position: absolute;
+    left: clamp(405px, 42.1848vw, 1620px);
+    top: clamp(40px, 4.1664vw, 160px);
+    width: clamp(410px, 42.705600000000004vw, 1640px);
+    border-radius: 10px;
+    box-shadow: 0px 4px 42px 0px rgba(0, 0, 0, 0.15);
+    height: clamp(236px, 24.58176vw, 944px);
+
+    &__content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-direction: row;
+
+    }
+
+    &__text {
+      font-size: clamp(8px, 0.83328vw, 32px);
+      text-align: left;
+      margin-bottom: clamp(2px, 0.20832vw, 8px);
+    }
+
+    &__error {
+      font-size: clamp(8px, 0.83328vw, 32px);
+    }
+
+    &__input {
+      margin-bottom: clamp(2px, 0.20832vw, 8px);
+      width: clamp(163.5px, 17.030160000000002vw, 654px);
+      padding: clamp(1px, 0.10416vw, 4px);
+      font-size: clamp(8px, 0.83328vw, 32px);
+      text-align: left;
+      text-indent: 15px;
+    }
+
+    &__input-s {
+      margin-bottom: clamp(2px, 0.20832vw, 8px);
+      width: clamp(370px, 38.5392vw, 1480px);
+      padding: clamp(1px, 0.10416vw, 4px);
+      font-size: clamp(8px, 0.83328vw, 32px);
+      text-align: left;
+      text-indent: 15px;
+    }
+
+    &__button {
+      width: clamp(130px, 13.5408vw, 520px);
+      padding: clamp(7.5px, 0.7812vw, 30px);
+      font-family: "Open Sans", sans-serif;
+      font-size: clamp(10px, 1.0416vw, 40px);
+    }
   }
 }

@@ -5,13 +5,22 @@ footer {
 }
 
 .footer {
-  padding-top: clamp(32px, 14.95296vw, 128px);
+  // padding-top: clamp(32px, 14.95296vw, 128px);
   padding-bottom: clamp(16px, 7.47648vw, 64px);
   background-color: $green;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+
+  &__nav {
+    display: flex;
+    text-indent: clamp(20px, 2.0832vw, 80px);
+
+  }
+
+  &__logo {
+    width: clamp(61px, 28.50408vw, 244px);
+    height: clamp(49.5px, 23.13036vw, 198px);
+    margin-bottom: clamp(7.5px, 3.5046vw, 30px);
+  }
+
   &__text {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
@@ -21,6 +30,7 @@ footer {
     font-size: clamp(12px, 5.60736vw, 48px);
     margin-top: clamp(8px, 3.73824vw, 32px);
   }
+
   &__btn {
     padding: clamp(7.5px, 3.5046vw, 30px);
     width: clamp(125px, 58.41vw, 500px);
@@ -33,11 +43,13 @@ footer {
     font-weight: 500;
     margin-top: clamp(16px, 7.47648vw, 64px);
   }
+
   &__separator {
     margin-top: clamp(32px, 14.95296vw, 128px);
     border: 1px solid $white;
     width: clamp(190px, 88.7832vw, 760px);
   }
+
   &__com {
     font-family: "Rubik", sans-serif;
     font-size: clamp(9px, 4.20552vw, 36px);
@@ -46,5 +58,50 @@ footer {
     line-height: clamp(10.665px, 4.9835411999999994vw, 42.66px);
     font-weight: 400;
     margin-top: clamp(8px, 3.73824vw, 32px);
+    text-align: center;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  footer {}
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: auto;
+
+    &__nav {
+      width: 86.6%;
+      margin: auto;
+    }
+
+    &__logo {
+      width: clamp(69px, 7.1870400000000005vw, 276px);
+      height: clamp(47.495px, 4.9470792vw, 189.98px);
+    }
+
+    &__text {
+      font-size: clamp(10.5px, 1.09368vw, 42px)
+    }
+
+    &__btn {
+      width: clamp(130px, 13.5408vw, 520px);
+      padding: clamp(7.5px, 0.7812vw, 30px);
+      background-color: $white;
+      border: none;
+      color: $green;
+      font-family: "Open Sans", sans-serif;
+      font-size: clamp(10px, 1.0416vw, 40px);
+      border-radius: 40px;
+    }
+
+    &__com {
+      position: relative;
+      font-size: clamp(10.5px, 1.09368vw, 42px);
+    }
+
   }
 }

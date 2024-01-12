@@ -11,7 +11,7 @@
 
   &__text {
     color: $white;
-    font-family: "Rubik", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
     font-size: clamp(9.5px, 4.439159999999999vw, 38px);
     width: 80%;
@@ -25,5 +25,26 @@
   &__img {
     width: clamp(195px, 91.11959999999999vw, 780px);
     height: clamp(107.23px, 50.1064344vw, 428.92px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .advant {
+    position: relative;
+
+    &__text {
+      width: 70%;
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+      font-size: clamp(9.5px, 0.9895200000000001vw, 38px);
+      line-height: clamp(16.12px, 1.6790592000000002vw, 64.48px);
+      position: absolute;
+      top: 25px;
+    }
+
+    &__img {
+      width: clamp(200px, 20.832vw, 800px);
+      height: clamp(90px, 9.3744vw, 360px);
+    }
   }
 }

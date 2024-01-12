@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: clamp(32px, 14.95296vw, 128px);
+  margin-top: clamp(16px, 7.47648vw, 64px);
   background-color: $green;
 
   &__separatop {
@@ -22,18 +22,17 @@
     flex-direction: column;
     text-align: center;
     background-color: $white2;
-    margin-top: clamp(32px, 14.95296vw, 128px);
+    margin-top: clamp(16px, 7.47648vw, 64px);
     padding-bottom: clamp(16px, 7.47648vw, 64px);
   }
 
   &__text-s {
     color: $dark;
     font-family: "Rubik", sans-serif;
-    margin-top: clamp(16px, 7.47648vw, 64px);
     font-weight: 600;
     font-size: clamp(21px, 9.81288vw, 84px);
     line-height: clamp(25px, 11.681999999999999vw, 100px);
-    margin-top: clamp(32px, 14.95296vw, 128px);
+    margin-top: clamp(8px, 3.73824vw, 32px);
   }
 
   &__par-s {
@@ -49,14 +48,12 @@
 
   &__advant {
     background-image: url("../../../assets/Group-43.webp");
-    // background-position: center;
-    // background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: clamp(32px, 14.95296vw, 128px);
+    padding-bottom: clamp(16px, 7.47648vw, 64px);
 
     &__btn {
       background-color: $gold;
@@ -79,6 +76,7 @@
   .about {
     background-image: url(../../../assets/about_bg.webp);
 
+
     .about__card-pc {
       display: flex;
       flex-wrap: wrap;
@@ -86,10 +84,14 @@
       flex-direction: row;
       gap: clamp(16px, 1.66656vw, 64px);
     }
+
     &__vagon {
+      width: 100%;
+
       &__content {
         width: 86.6%;
       }
+
       &__card {
         display: flex;
         flex-wrap: wrap;
@@ -98,13 +100,39 @@
         gap: clamp(16px, 1.66656vw, 64px);
       }
     }
+
     &__text-s {
       text-align: left;
       font-size: clamp(24px, 2.49984vw, 96px);
     }
+
     &__par-s {
       text-align: left;
+      font-size: clamp(10px, 1.0416vw, 40px);
       width: 42%;
     }
+
+    &__advant {
+      background-image: url('../../../assets/features_bg.webp');
+      width: clamp(960px, 99.9936vw, 3840px);
+      height: auto;
+
+      &__btn {
+        width: clamp(130px, 13.5408vw, 520px);
+        padding: clamp(7.5px, 0.7812vw, 30px);
+        font-family: "Open Sans", sans-serif;
+        font-size: clamp(10px, 1.0416vw, 40px);
+      }
+    }
+
+    &__advant__cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-direction: row;
+
+    }
+
+
   }
 }

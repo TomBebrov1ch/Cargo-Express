@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 import Card from "../../components/AboutCard/AboutCard.jsx";
 import ButtonMore from "../../components/Buttons/ButtonMore/ButtonMore.jsx";
@@ -43,7 +44,9 @@ const AboutScreen = () => {
           par="Интерактивная дислокация позволяет чётко оценивать сроки поставки вагонов под погрузку и доставку."
         />
       </div>
-      <ButtonMore className={"outline"} text="Подробнее" />
+      <Link>
+        <ButtonMore className={"outline"} text="Подробнее" />
+      </Link>
       <div className="about__vagon" id="vagon">
         <div className="about__vagon__content">
           <h1 className="about__text-s">Наши Вагоны</h1>
@@ -68,10 +71,12 @@ const AboutScreen = () => {
           сфокусированная на предоставление безупречного сервиса казахстанским
           грузоотправителям."
         />
-        <Advant text="Высококвалифицированный персонал, с многолетним опытом работы." />
-        <Advant text="Высококвалифицированный персонал, с многолетним опытом работы." />
-        <Advant text="Высококвалифицированный персонал, с многолетним опытом работы." />
-        <Advant text="Высококвалифицированный персонал, с многолетним опытом работы." />
+        <div className="about__advant__cards">
+          <Advant text="Высококвалифицированный персонал, с многолетним опытом работы." />
+          <Advant text="Высококвалифицированный персонал, с многолетним опытом работы." />
+          <Advant text="Высококвалифицированный персонал, с многолетним опытом работы." />
+          <Advant text="Высококвалифицированный персонал, с многолетним опытом работы." />
+        </div>
         <button className="about__advant__btn">Связаться с нами</button>
       </div>
     </div>
