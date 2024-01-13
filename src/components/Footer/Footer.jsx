@@ -24,6 +24,10 @@ const Footer = () => {
           <p className="footer__com">©Cargo Express PV 2024</p>
         </nav>
       </div>
+      <section className="footer__items-pc">
+        <hr className="footer__separator-pc" />
+        <p className="footer__com-pc">©Cargo Express PV 2024</p>
+      </section>
     </footer>
   );
 };
