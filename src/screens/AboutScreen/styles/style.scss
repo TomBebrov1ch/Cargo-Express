@@ -12,7 +12,9 @@
   &__separatop {
     border: 3px solid $gold;
     width: clamp(75px, 35.046vw, 300px);
-    margin-top: clamp(8px, 3.73824vw, 32px);
+    position: relative;
+    top: clamp(8px, 3.73824vw, 32px);
+    margin: auto;
   }
 
   &__vagon {
@@ -41,9 +43,10 @@
     color: $dark;
     text-align: center;
     width: 90%;
-    margin-top: clamp(8px, 3.73824vw, 32px);
+    padding-top: clamp(16px, 7.47648vw, 64px);
     font-size: clamp(8px, 3.73824vw, 32px);
-    margin-bottom: clamp(16px, 7.47648vw, 64px);
+    padding-bottom: clamp(16px, 7.47648vw, 64px);
+    margin: auto;
   }
 
   &__advant {
@@ -75,8 +78,9 @@
 @media screen and (min-width: 1024px) {
   .about {
     background-image: url(../../../assets/about_bg.webp);
-
-
+    &__separatop {
+      margin-top: clamp(0.5px, 0.05208vw, 2px);
+    }
     .about__card-pc {
       display: flex;
       flex-wrap: wrap;
@@ -103,17 +107,21 @@
 
     &__text-s {
       text-align: left;
-      font-size: clamp(24px, 2.49984vw, 96px);
+      font-size: clamp(20px, 2.0832vw, 80px);
     }
 
     &__par-s {
       text-align: left;
-      font-size: clamp(10px, 1.0416vw, 40px);
+      font-size: clamp(9px, 0.93744vw, 36px);
       width: 42%;
+      line-height: clamp(16.12px, 1.6790592000000002vw, 64.48px);
+      margin-top: clamp(8px, 0.83328vw, 32px);
+    }
+    &__vagon__card {
     }
 
     &__advant {
-      background-image: url('../../../assets/features_bg.webp');
+      background-image: url("../../../assets/features_bg.webp");
       width: clamp(960px, 99.9936vw, 3840px);
       height: auto;
 
@@ -130,9 +138,6 @@
       flex-wrap: wrap;
       justify-content: space-around;
       flex-direction: row;
-
     }
-
-
   }
 }

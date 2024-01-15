@@ -23,6 +23,7 @@
 
 @media screen and (min-width: 1024px) {
   .vagon {
+    margin-top: clamp(-16px, -1.66656vw, -64px);
     &__text {
       font-size: clamp(17.5px, 1.8228vw, 70px);
       font-weight: 500;

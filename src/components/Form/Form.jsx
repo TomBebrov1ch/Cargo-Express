@@ -40,11 +40,17 @@ const Form = () => {
               },
             })}
           />
-          {errors.email && <p className="form__error">{errors.email.message}</p>}
+          {errors.email && (
+            <p className="form__error">{errors.email.message}</p>
+          )}
         </div>
-        <div className="form__card">
+        <div className="form__card-s">
           <p className="form__text">Коментарий*</p>
-          <input placeholder="Коментарий" className="form__input-s" required={true} />
+          <input
+            placeholder="Коментарий"
+            className="form__input-s"
+            required={true}
+          />
         </div>
       </nav>
       <button className="form__button" type="submit">

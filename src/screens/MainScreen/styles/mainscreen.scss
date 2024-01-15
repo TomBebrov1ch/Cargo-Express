@@ -20,6 +20,7 @@
   &__first {
     text-align: center;
     color: $dark;
+    font-size: clamp(16px, 7.47648vw, 64px);
   }
 
   &__second {

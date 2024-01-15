@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Fade } from "react-awesome-reveal";
+import { Link } from "react-scroll";
 import "./styles/mainscreen.scss";
 import MainTrain from "../../assets/main_train.webp";
 import TrainPc from "../../assets/main_train-pc.webp";
@@ -9,6 +10,7 @@ import Menu from "../../components/Menu/Menu.jsx";
 import ButtonOur from "../../components/Buttons/ButtonOur/ButtonOur.jsx";
 import ButtonMore from "../../components/Buttons/ButtonMore/ButtonMore.jsx";
 import Calculator from "../../components/Calculator/Calculator";
+import Loader from "../../components/Loader/Loader";
 
 const MainScreen = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,6 +31,7 @@ const MainScreen = () => {
   return (
     <>
       <section className="mob-screen-main" id="mob-main">
+        <Loader />
         <main className="main">
           <Header isOpen={isOpen} toggleMenu={toggleMenu} />
           {isOpen && <Menu isOpen={isOpen} toggleMenu={toggleMenu} />}
@@ -49,12 +52,16 @@ const MainScreen = () => {
               </p>
             </Fade>
             <div className="main__buttons">
-              <Fade direction="right" delay={300} triggerOnce>
-                <ButtonOur text={"Наши вагоны"} showImage={true} />
-              </Fade>
-              <Fade direction="left" delay={400} triggerOnce>
-                <ButtonMore text="Подробнее" className={"simple"} />
-              </Fade>
+              <Link smooth to="vagon">
+                <Fade direction="up" delay={300} triggerOnce>
+                  <ButtonOur text={"Наши вагоны"} showImage={true} />
+                </Fade>
+              </Link>
+              <Link smooth to="about">
+                <Fade direction="up" delay={300} triggerOnce>
+                  <ButtonMore text="Подробнее" className={"simple"} />
+                </Fade>
+              </Link>
             </div>
           </div>
           <img src={TrainPc} alt="train" className="main__train-pc" />

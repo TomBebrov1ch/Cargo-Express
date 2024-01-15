@@ -53,8 +53,8 @@
 @media screen and (min-width: 1024px) {
   .quest {
     &__content {
-      height: clamp(285px, 29.6856vw, 1140px);
       width: 86.6%;
+      height: clamp(285px, 29.6856vw, 1140px);
       display: block;
 
       &__text {
@@ -78,7 +78,8 @@
         font-family: "Open Sans", sans-serif;
         font-size: clamp(10px, 1.0416vw, 40px);
         text-align: left;
-        width: 35%;
+        width: 50%;
+        line-height: clamp(16.12px, 1.6790592000000002vw, 64.48px);
       }
     }
 

@@ -4,14 +4,14 @@ footer {
   width: 100%;
 }
 
-.footer {
+.footer_m {
   padding-bottom: clamp(16px, 7.47648vw, 64px);
   background-color: $green;
-
-  &__nav {
-    display: flex;
-    text-indent: clamp(20px, 2.0832vw, 80px);
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: clamp(32px, 14.95296vw, 128px);
 
   &__logo {
     width: clamp(61px, 28.50408vw, 244px);
@@ -62,9 +62,31 @@ footer {
 .footer__items-pc {
   display: none;
 }
+.footer {
+  display: none;
+}
+
+.footer_m {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $green;
+  &__logo {
+    width: clamp(61px, 28.50408vw, 244px);
+    height: clamp(49.5px, 23.13036vw, 198px);
+    margin-bottom: clamp(7.5px, 3.5046vw, 30px);
+  }
+  &__nav {
+  }
+}
 
 @media screen and (min-width: 1024px) {
   footer {
+  }
+
+  .footer_m {
+    display: none;
   }
   .footer__items-pc {
     display: flex;
@@ -92,28 +114,30 @@ footer {
 
   .footer {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-    padding: clamp(16px, 1.66656vw, 64px);
-    padding-left: clamp(64px, 6.66624vw, 256px);
-    &__items {
-      display: none;
-    }
-    &__nav {
-      margin: auto;
-    }
-
+    justify-content: space-around;
+    background-color: $green;
+    padding-bottom: clamp(16px, 1.66656vw, 64px);
+    padding-top: clamp(16px, 1.66656vw, 64px);
     &__logo {
       width: clamp(69px, 7.1870400000000005vw, 276px);
       height: clamp(47.495px, 4.9470792vw, 189.98px);
+      position: relative;
+      left: clamp(32px, 3.33312vw, 128px);
     }
 
+    &__nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+    }
     &__text {
-      text-align: center;
       font-size: clamp(10.5px, 1.09368vw, 42px);
-      position: relative;
-      left: clamp(8px, 0.83328vw, 32px);
+      text-indent: clamp(16px, 1.66656vw, 64px);
+      font-family: "Rubik", sans-serif;
+      color: $white;
+      font-size: clamp(10.5px, 1.09368vw, 42px);
+      font-weight: 400;
     }
 
     &__btn {
@@ -126,13 +150,7 @@ footer {
       font-size: clamp(10px, 1.0416vw, 40px);
       border-radius: 40px;
       position: relative;
-      left: clamp(147.5px, 15.3636vw, 590px);
-      bottom: clamp(16px, 1.66656vw, 64px);
-    }
-
-    &__com {
-      position: relative;
-      font-size: clamp(10.5px, 1.09368vw, 42px);
+      left: clamp(160px, 16.6656vw, 640px);
     }
   }
 }

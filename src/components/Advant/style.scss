@@ -20,8 +20,6 @@
     line-height: clamp(15.31px, 7.1540568vw, 61.24px);
   }
 
-
-
   &__img {
     width: clamp(195px, 91.11959999999999vw, 780px);
     height: clamp(107.23px, 50.1064344vw, 428.92px);
@@ -31,15 +29,17 @@
 @media screen and (min-width: 1024px) {
   .advant {
     position: relative;
+    margin-top: clamp(32px, 3.33312vw, 128px);
 
     &__text {
       width: 70%;
       text-align: center;
       font-family: "Open Sans", sans-serif;
+      font-weight: 400;
       font-size: clamp(9.5px, 0.9895200000000001vw, 38px);
-      line-height: clamp(16.12px, 1.6790592000000002vw, 64.48px);
+      line-height: clamp(13px, 1.35408vw, 52px);
       position: absolute;
-      top: 25px;
+      top: clamp(16.5px, 1.71864vw, 66px);
     }
 
     &__img {

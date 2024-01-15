@@ -4,12 +4,12 @@
   margin: auto;
   width: 90%;
   background-color: $green;
-  border-radius: 3px;
-  padding-bottom: clamp(16px, 7.47648vw, 64px);
+  border-radius: 5px;
+  padding-bottom: clamp(16px, 1.66656vw, 64px);
 
   &__text {
     color: $white;
-    margin-top: clamp(16px, 7.47648vw, 64px);
+    margin-top: clamp(16px, 1.66656vw, 64px);
     font-weight: 400;
     font-size: clamp(8px, 3.73824vw, 32px);
     font-family: "Open Sans", sans-serif;
@@ -84,7 +84,7 @@
 
 @media screen and (min-width: 1024px) {
   .calc {
-    width: clamp(454px, 47.28864vw, 1816px);
+    width: clamp(500px, 52.08vw, 2000px);
     height: auto;
 
     &__inputs {
@@ -94,6 +94,9 @@
       flex-direction: row;
       width: 80%;
       margin: auto;
+    }
+    &__input {
+      padding-left: 10px;
     }
 
     &__text {
@@ -107,16 +110,16 @@
       padding: clamp(10px, 1.0416vw, 40px);
       width: clamp(175px, 18.228vw, 700px);
       text-align: left;
-      text-indent: 30px;
+      text-indent: clamp(10px, 1.0416vw, 40px);
     }
 
     &__item-s {
       font-size: clamp(8px, 0.83328vw, 32px);
       font-weight: 400;
       padding: clamp(10px, 1.0416vw, 40px);
-      width: clamp(359px, 37.39344vw, 1436px);
+      width: clamp(375px, 39.06vw, 1500px);
       text-align: left;
-      text-indent: 10px;
+      text-indent: clamp(0.5px, 0.05208vw, 2px);
     }
 
     &__button {
@@ -124,7 +127,7 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-      margin-top: clamp(16px, 7.47648vw, 64px);
+      margin-top: clamp(16px, 1.66656vw, 64px);
       background-color: $gold;
       border: none;
       width: clamp(130px, 13.5408vw, 520px);

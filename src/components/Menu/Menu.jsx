@@ -1,6 +1,6 @@
 import React from "react";
 import Hamburger from "hamburger-react";
-import { Link as ScrollLink } from "react-scroll";
+import { Link as ScrollLink, Link } from "react-scroll";
 import { Fade, Slide } from "react-awesome-reveal";
 
 import "../Menu/menu.scss";
@@ -19,22 +19,42 @@ const Menu = (props) => {
           />
         </div>
         <img src={logo} alt="logo" className="menu__logo" />
-        <ScrollLink className="menu__item">
+        <ScrollLink
+          onClick={props.closeMenu}
+          className="menu__item"
+          smooth
+          to="main"
+        >
           <Fade direction="right" delay={200}>
             Главная
           </Fade>
         </ScrollLink>
-        <ScrollLink className="menu__item">
+        <ScrollLink
+          onClick={props.closeMenu}
+          className="menu__item"
+          smooth
+          to="about"
+        >
           <Fade direction="left" delay={300}>
             О нас
           </Fade>
         </ScrollLink>
-        <ScrollLink className="menu__item">
+        <ScrollLink
+          onClick={props.closeMenu}
+          className="menu__item"
+          smooth
+          to="vagon"
+        >
           <Fade direction="right" delay={400}>
             Наши вагоны
           </Fade>
         </ScrollLink>
-        <ScrollLink className="menu__item">
+        <ScrollLink
+          onClick={props.closeMenu}
+          className="menu__item"
+          smooth
+          to="quest"
+        >
           <Fade direction="left" delay={500}>
             Контакты
           </Fade>

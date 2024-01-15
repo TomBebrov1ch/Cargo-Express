@@ -43,25 +43,33 @@
 @media screen and (min-width: 1024px) {
   .card {
     width: clamp(192.5px, 20.0508vw, 770px);
-    height: clamp(189px, 19.68624vw, 756px);
-
+    height: auto;
+    margin-top: clamp(16px, 1.66656vw, 64px);
+    padding-top: clamp(16px, 1.66656vw, 64px);
+    padding-bottom: clamp(16px, 1.66656vw, 64px);
     &__img {
+      margin-top: 1px;
       width: clamp(46.5px, 4.84344vw, 186px);
       height: clamp(46.5px, 4.84344vw, 186px);
       margin-right: clamp(92.5px, 9.6348vw, 370px);
     }
 
-    &__text {}
+    &__text {
+      margin-top: clamp(8px, 0.83328vw, 32px);
+    }
 
     &__main {
       font-size: clamp(12px, 1.24992vw, 48px);
       text-align: left;
       width: 80%;
+      line-height: clamp(19.34px, 2.0144544vw, 77.36px);
     }
 
     &__par {
+      margin-top: clamp(8px, 0.83328vw, 32px);
       font-size: clamp(8.5px, 0.88536vw, 34px);
       text-align: left;
+      margin-bottom: clamp(-2.5px, -0.2604vw, -10px);
     }
   }
 }

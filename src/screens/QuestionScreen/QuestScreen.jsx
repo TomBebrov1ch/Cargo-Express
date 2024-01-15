@@ -1,6 +1,7 @@
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
+import copy from "clipboard-copy";
 
 import "../AboutScreen/styles/style.scss";
 

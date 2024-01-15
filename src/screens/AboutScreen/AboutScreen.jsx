@@ -77,7 +77,9 @@ const AboutScreen = () => {
           <Advant text="Высококвалифицированный персонал, с многолетним опытом работы." />
           <Advant text="Высококвалифицированный персонал, с многолетним опытом работы." />
         </div>
-        <button className="about__advant__btn">Связаться с нами</button>
+        <Link smooth to="quest">
+          <button className="about__advant__btn">Связаться с нами</button>
+        </Link>
       </div>
     </div>
   );
